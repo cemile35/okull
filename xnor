@@ -1,0 +1,15 @@
+-- standart iki girisli XNOR kapisi
+-- Girisler: a, b
+-- Cikis: f
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+Entity eproje is 
+Port ( a: in std_logic; 
+       b: in std_logic;
+       f: out std_logic );
+End eproje;
+Architecture Behv of eproje is
+Begin 
+ f <= a xnor b; 
+End Behv;
